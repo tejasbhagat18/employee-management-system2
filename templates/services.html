@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+{% block title %}Services | Employee Management System{% endblock %}
+
+{% block content %}
+
+<section class="page-section">
+    <div class="container" style="max-width:1200px;margin:0 auto;padding:0 24px;">
+
+        <div class="page-section-header">
+            <span class="page-badge">Our Services</span>
+            <h1>What EmployeeMS Provides</h1>
+            <p>
+                EmployeeMS provides all important features required to manage employee records,
+                authentication, roles, and company data in one secure platform.
+            </p>
+        </div>
+
+        <div class="cards-grid-4">
+
+            <div class="service-card" style="animation-delay: 0.1s;">
+                <div class="card-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><line x1="20" y1="8" x2="20" y2="14"/><line x1="23" y1="11" x2="17" y2="11"/></svg>
+                </div>
+                <h3>Employee CRUD</h3>
+                <p>Add, view, update, and delete employee records from the admin dashboard.</p>
+            </div>
+
+            <div class="service-card" style="animation-delay: 0.15s;">
+                <div class="card-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                </div>
+                <h3>Secure Login</h3>
+                <p>Use hashed passwords and session-based authentication for secure access.</p>
+            </div>
+
+            <div class="service-card" style="animation-delay: 0.2s;">
+                <div class="card-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <h3>Role Access</h3>
+                <p>Separate permissions for admin and employee users.</p>
+            </div>
+
+            <div class="service-card" style="animation-delay: 0.25s;">
+                <div class="card-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                </div>
+                <h3>Profile Management</h3>
+                <p>Employees can view and update limited personal details.</p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<footer class="footer">
+    <p>© 2026 Employee Management System. All Rights Reserved.</p>
+</footer>
+
+{% endblock %}

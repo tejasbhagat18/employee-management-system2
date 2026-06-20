@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+{% block title %}My Profile{% endblock %}
+{% block page_title %}My Profile{% endblock %}
+
+{% block content %}
+
+<div class="profile-container">
+    <div class="profile-card">
+        <div class="profile-header">
+            <div class="profile-avatar">{{ employee.name[0] | upper }}</div>
+            <h2>{{ employee.name }}</h2>
+            <p>{{ employee.position }} • {{ employee.department }}</p>
+        </div>
+
+        <div class="profile-body">
+            <div class="profile-info-grid">
+                <div class="profile-info-item">
+                    <div class="profile-info-label">Full Name</div>
+                    <div class="profile-info-value">{{ employee.name }}</div>
+                </div>
+
+                <div class="profile-info-item">
+                    <div class="profile-info-label">Email</div>
+                    <div class="profile-info-value">{{ employee.email }}</div>
+                </div>
+
+                <div class="profile-info-item">
+                    <div class="profile-info-label">Phone</div>
+                    <div class="profile-info-value">{{ employee.phone }}</div>
+                </div>
+
+                <div class="profile-info-item">
+                    <div class="profile-info-label">Department</div>
+                    <div class="profile-info-value">{{ employee.department }}</div>
+                </div>
+
+                <div class="profile-info-item">
+                    <div class="profile-info-label">Position</div>
+                    <div class="profile-info-value">{{ employee.position }}</div>
+                </div>
+
+                <div class="profile-info-item">
+                    <div class="profile-info-label">Salary</div>
+                    <div class="profile-info-value">₹{{ employee.salary }}</div>
+                </div>
+
+                <div class="profile-info-item full-width">
+                    <div class="profile-info-label">Address</div>
+                    <div class="profile-info-value">{{ employee.address }}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="{{ url_for('employee_dashboard') }}" class="btn-back">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+        Back to Dashboard
+    </a>
+</div>
+
+{% endblock %}
