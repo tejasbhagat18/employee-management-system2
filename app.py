@@ -403,11 +403,10 @@ def api_delete_employee(id):
 
 
 
+with app.app_context():
+    db.create_all()
+    create_admin()
 
 
 if __name__ == "__main__":
-    with app.app_context():
-        db.create_all()
-        create_admin()
-
     app.run()
